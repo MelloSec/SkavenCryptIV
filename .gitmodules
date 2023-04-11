@@ -1,0 +1,6 @@
+[submodule "aescrypt"]
+	path = aescrypt
+	url = https://github.com/mellosec/aescrypt
+[submodule "xorcrypt"]
+	path = xorcrypt
+	url = https://github.com/mellosec/xorcrypt
