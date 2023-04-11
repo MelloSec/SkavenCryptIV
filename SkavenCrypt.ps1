@@ -46,13 +46,18 @@ param (
 
 if ($method -eq 'xor') {
     # Run XorCrypt.exe to encrypt or decrypt the file
+    Write-Output "Encrypting file using Xor.."
     $xorCryptExe = '.\XorCrypt.exe'
     $xorCryptArgs = @($operation, $inputFile, $outputFile, $keyword)
     & $xorCryptExe $xorCryptArgs
 }
 elseif ($method -eq 'aes') {
     # Run AESCrypt.exe to encrypt or decrypt the file
+    Write-Output "Encrypting file using AES.."
     $aesCryptExe = '.\AESCrypt.exe'
     $aesCryptArgs = @($operation, $inputFile, $outputFile, $keyword)
     & $aesCryptExe $aesCryptArgs
 }
+
+Write-Output "Base64 encoding outputfile to $outputFile.b64"
+base64.exe -e -n 0 -i $outputFile -o $outputFile.b64
