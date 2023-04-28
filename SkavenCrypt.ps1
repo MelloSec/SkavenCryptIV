@@ -59,5 +59,5 @@ elseif ($method -eq 'aes') {
     & $aesCryptExe $aesCryptArgs
 }
 
-Write-Output "Base64 encoding outputfile to $outputFile.b64"
-base64.exe -e -n 0 -i $outputFile -o $outputFile.b64
+# Write-Output "Base64 encoding outputfile to $outputFile.b64"
+Write-Output "Base64 command: base64.exe -e -n 0 -i $outputFile -o $outputFile.b64"
