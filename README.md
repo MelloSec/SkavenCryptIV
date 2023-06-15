@@ -41,4 +41,3 @@ If "aes" is selected as the encryption standard, the keyword must be 16, 24, or 
 
 ### This command decrypts the C:\encryptedoutput.txt file using Xor decryption with the MyXorKey keyword and saves the decrypted result to the C:\decryptedoutput.txt file.
 
-### Note that these are just examples and you may need to modify them to suit your specific needs, such as specifying different file paths, keywords, or other parameters. Additionally, make sure that you have the XorCrypt.exe and AESCrypt.exe utilities available in your path or in the same directory as the script for these examples to work.
