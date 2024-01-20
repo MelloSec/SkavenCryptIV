@@ -1,6 +1,6 @@
 ﻿## SkavenCryptIV
 
-Standalone C# executables wrapped lovingly in powershell. Will pass everything to the binary and accepts values from pipeline by name.
+Standalone C# executables wrapped lovingly in powershell. Will pass everything to the binary and accepts values from pipeline by property name.
 
 Encrypts or decrypts a file using XorCrypt.exe or AESCrypt.exe.
 
