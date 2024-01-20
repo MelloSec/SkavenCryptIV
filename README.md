@@ -18,31 +18,31 @@ If "aes" is selected as the encryption standard, the keyword must be 16, 24, or 
 
 ### To encrypt a file using AES encryption, you can use the following command:
 ```powershell
-.\SkavenCrypt.ps1 encrypt C:\input.txt C:\encryptedoutput.txt ImASixteenBitKey aes
+.\SkavenCrypt.ps1 encrypt C:\input.txt C:\encryptedoutput.enc ImASixteenBitKey aes
 ```
 
- This command encrypts the C:\input.txt file using AES encryption with the ImASixteenBitKey keyword and saves the encrypted result to the C:\encryptedoutput.txt file.
+ This command encrypts the C:\input.txt file using AES encryption with the ImASixteenBitKey keyword and saves the encrypted result to the C:\encryptedoutput.enc file.
 
 ### To decrypt the encrypted file, you can use the following command:
 ```powershell
-.\SkavenCrypt.ps1 decrypt C:\encryptedoutput.txt C:\decryptedoutput.txt ImASixteenBitKey aes
+.\SkavenCrypt.ps1 decrypt C:\encryptedoutput.enc C:\decryptedoutput.txt ImASixteenBitKey aes
 ```
 
- This command decrypts the C:\encryptedoutput.txt file using AES decryption with the ImASixteenBitKey keyword and saves the decrypted result to the C:\decryptedoutput.txt file.
+ This command decrypts the C:\encryptedoutput.enc file using AES decryption with the ImASixteenBitKey keyword and saves the decrypted result to the C:\decryptedoutput.txt file.
 
 
 # Xor Encryption
 ### To encrypt a file using Xor encryption, you can use the following command:
 ```powershell
-.\SkavenCrypt.ps1 encrypt C:\input.txt C:\encryptedoutput.txt MyXorKey xor
+.\SkavenCrypt.ps1 encrypt C:\input.txt C:\encryptedoutput.enc MyXorKey xor
 ```
 
- This command encrypts the C:\input.txt file using Xor encryption with the MyXorKey keyword and saves the encrypted result to the C:\encryptedoutput.txt file.
+ This command encrypts the C:\input.txt file using Xor encryption with the MyXorKey keyword and saves the encrypted result to the C:\encryptedoutput.enc file.
 
 ### To decrypt the encrypted file, you can use the following command:
 ```powershell
-.\SkavenCrypt.ps1 decrypt C:\encryptedoutput.txt C:\decryptedoutput.txt MyXorKey xor
+.\SkavenCrypt.ps1 decrypt C:\encryptedoutput.enc C:\decryptedoutput.txt MyXorKey xor
 ```
 
- This command decrypts the C:\encryptedoutput.txt file using Xor decryption with the MyXorKey keyword and saves the decrypted result to the C:\decryptedoutput.txt file.
+ This command decrypts the C:\encryptedoutput.enc file using Xor decryption with the MyXorKey keyword and saves the decrypted result to the C:\decryptedoutput.txt file.
 
